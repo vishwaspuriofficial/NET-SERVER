@@ -6,11 +6,22 @@ def startServer():
     global file
     with open(file+".txt","w") as f:
         pass
-    st.change_page("main")
+    st.experimental_set_query_params(f=file)
+    # st.change_page("main")
+    
+    
+def joinServer():
+    st.experimental_set_query_params(file)
+    st.change_page("join")
+    
+join = st.button("Join server")
+start = st.button("Start server")
 
-a = st.button("Start server")
-
-if a:
+if start:
     file = st.text_input("Enter server name",key="server")
-    # if file:
-    #     startServer()
+    if file:
+        startServer()
+if join:
+    file = st.text_input("Enter server name",key="server")
+    if file:
+        joinServer()
