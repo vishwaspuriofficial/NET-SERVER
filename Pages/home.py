@@ -13,15 +13,19 @@ def startServer():
 def joinServer():
     st.experimental_set_query_params(file)
     st.change_page("join")
-    
-join = st.button("Join server")
-start = st.button("Start server")
 
-if start:
-    file = st.text_input("Enter server name",key="server")
-    if file:
-        startServer()
-if join:
-    file = st.text_input("Enter server name",key="server")
-    if file:
-        joinServer()
+def app():
+    st.header('Adding Numbers')
+
+    st.subheader("Made by Vishwas Puri using Streamlit (python)")
+    join = st.button("Join server")
+    start = st.button("Start server")
+
+    if start:
+        file = st.text_input("Enter server name",key="server")
+        if file:
+            startServer()
+    if join:
+        file = st.text_input("Enter server name",key="server")
+        if file:
+            joinServer()
