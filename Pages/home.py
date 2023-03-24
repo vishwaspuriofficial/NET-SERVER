@@ -15,9 +15,9 @@ def joinServer():
     st.change_page("join")
 
 def app():
-    st.header('Adding Numbers')
+    st.header('Net Server Home Page')
 
-    st.subheader("Made by Vishwas Puri using Streamlit (python)")
+    st.subheader("")
     join = st.button("Join server")
     start = st.button("Start server")
 
