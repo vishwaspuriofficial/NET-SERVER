@@ -39,11 +39,15 @@ def stopServer():
     os.remove(os.getcwd()+f"\{filename}")
     st.success(f"Server Disconnected")
 
-a = st.button("Start server")
-b = st.button("Stop server")
+def app():
+    st.header('Net Server Main Page')
 
-if a:
-    file = st.text_input("Enter server name",key="server", on_change=submit)
+    st.subheader("")
+    a = st.button("Start server")
+    b = st.button("Stop server")
 
-if b:
-    stopServer()
+    if a:
+        file = st.text_input("Enter server name",key="server", on_change=submit)
+
+    if b:
+        stopServer()
