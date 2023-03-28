@@ -12,7 +12,7 @@ def submit():
         f.write(st.session_state.something)
 
 def app():
-    st.header('Net Server Main Page')
+    st.header('Net Server Write Page')
 
     st.subheader("")
     
