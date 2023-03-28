@@ -17,7 +17,7 @@ def joinServer():
 def app():
     st.header('Net Server Home Page')
 
-    st.subheader("")
+    # st.subheader("")
     join = st.button("Join server")
     start = st.button("Start server")
 
