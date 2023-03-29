@@ -14,7 +14,7 @@ def submit():
 def app():
     st.header('Net Server Write Page')
 
-    st.subheader("")
+    # st.subheader("")
     
     text = ""
     count=0
