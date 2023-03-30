@@ -42,7 +42,7 @@ def stopServer():
 def app():
     st.header('Net Server Main Page')
 
-    st.subheader("")
+    # st.subheader("")
     a = st.button("Start server")
     b = st.button("Stop server")
 
