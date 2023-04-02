@@ -12,7 +12,5 @@ st.title("Multi-page Application")
 
 # Add all your applications (pages) here
 app.add_page("Home", home.app)
-app.add_page("Adding", add.app)
-
 # The main app
 app.run()
