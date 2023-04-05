@@ -2,7 +2,6 @@ import streamlit as st
 
 # Custom imports
 from pages import MultiPage
-# from Pages import add, multiply, home
 
 # Create an instance of the app
 app = MultiPage()
