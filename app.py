@@ -1,4 +1,5 @@
 import streamlit as st
+from Page import home
 
 # Custom imports
 from pages import MultiPage
