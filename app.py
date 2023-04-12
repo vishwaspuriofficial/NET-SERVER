@@ -1,7 +1,7 @@
 import streamlit as st
-from Page import home
-from Page import main
-from Page import write
+from Pages import home
+from Pages import main
+from Pages import write
 
 # Custom imports
 from pages import MultiPage
